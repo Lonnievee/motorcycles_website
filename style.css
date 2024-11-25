@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-bottom: 60px; /* Adds space at the bottom to prevent footer overlap */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: red; /* Adds hover effect for navigation links */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+p, ul {
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul {
+    padding-left: 40px; /* Adds spacing for list items */
+}
+
+a {
+    color: blue; /* Ensures all links are blue */
+    text-decoration: underline; /* Underlines links */
+}
+
+a:hover {
+    color: darkblue; /* Changes color when hovering */
+}
+
+/* Hero Section (if applicable) */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaeaea;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10; /* Ensures the footer is always on top */
+}
+
+
