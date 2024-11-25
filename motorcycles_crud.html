@@ -20,38 +20,42 @@
 
     <main>
         <h1>Manage Motorcycles</h1>
-        <form>
+        <div>
             <label for="name">Motorcycle Name:</label>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="Enter motorcycle name">
             <label for="type">Type:</label>
             <select id="type">
                 <option>Sport</option>
                 <option>Cruiser</option>
-                <option>Touring</option>
                 <option>Adventure</option>
+                <option>Touring</option>
                 <option>Electric</option>
             </select>
             <label for="price">Price ($):</label>
-            <input type="number" id="price">
-            <button type="button" onclick="addMotorcycle()">Add Motorcycle</button>
-        </form>
-        <h2>Motorcycle List</h2>
-        <table id="motorcycle-list">
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Price</th>
-                <th>Actions</th>
-            </tr>
+            <input type="text" id="price" placeholder="Enter price">
+            <button id="addBtn">Add Motorcycle</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="motorcycleList"></tbody>
         </table>
     </main>
 
     <footer>
         <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
     </footer>
-    <script src="analytics.js"></script>
+
+    <script src="crud.js"></script>
 </body>
 </html>
+
 
 
 
