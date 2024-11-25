@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analytics</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -20,17 +19,20 @@
     </header>
 
     <main>
-        <section>
-            <h1>Motorcycle Sales Data</h1>
-            <p>This chart shows the sales data for different types of motorcycles.</p>
-            <canvas id="salesChart" width="400" height="200"></canvas>
-        </section>
+        <h1>Motorcycle Sales Data</h1>
+        <canvas id="chart"></canvas>
     </main>
 
     <footer>
         <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
     </footer>
 
-    <script src="js/analytics.js"></script> <!-- Link the JS file for the chart -->
+    <!-- Ensure Chart.js loads first -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="analytics.js"></script>
 </body>
 </html>
+
+
+
+

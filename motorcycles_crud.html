@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Motorcycles</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -20,38 +20,39 @@
 
     <main>
         <h1>Manage Motorcycles</h1>
-        <form id="motorcycleForm">
+        <form>
             <label for="name">Motorcycle Name:</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name">
             <label for="type">Type:</label>
             <select id="type">
-                <option value="sport">Sport</option>
-                <option value="cruiser">Cruiser</option>
-                <option value="touring">Touring</option>
+                <option>Sport</option>
+                <option>Cruiser</option>
+                <option>Touring</option>
+                <option>Adventure</option>
+                <option>Electric</option>
             </select>
             <label for="price">Price ($):</label>
-            <input type="number" id="price" required>
+            <input type="number" id="price">
             <button type="button" onclick="addMotorcycle()">Add Motorcycle</button>
         </form>
-
         <h2>Motorcycle List</h2>
-        <table id="motorcycleTable">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
+        <table id="motorcycle-list">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
         </table>
     </main>
 
     <footer>
         <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="analytics.js"></script>
 </body>
 </html>
+
+
+
+
