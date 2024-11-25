@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Motorcycles</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="navbar">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="motorcycles_crud.html">Manage Motorcycles</a></li>
@@ -17,25 +17,24 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <h1>Manage Motorcycles</h1>
-        <div>
-            <label for="name">Motorcycle Name:</label>
-            <input type="text" id="name" placeholder="Enter motorcycle name">
-            <label for="type">Type:</label>
-            <select id="type">
-                <option>Sport</option>
-                <option>Cruiser</option>
-                <option>Adventure</option>
-                <option>Touring</option>
-                <option>Electric</option>
+        <form id="motorcycleForm">
+            <label for="motorcycleName">Motorcycle Name:</label>
+            <input type="text" id="motorcycleName" placeholder="Enter motorcycle name" required>
+            <label for="motorcycleType">Type:</label>
+            <select id="motorcycleType">
+                <option value="Sport">Sport</option>
+                <option value="Cruiser">Cruiser</option>
+                <option value="Touring">Touring</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Electric">Electric</option>
             </select>
-            <label for="price">Price ($):</label>
-            <input type="text" id="price" placeholder="Enter price">
-            <button id="addBtn">Add Motorcycle</button>
-        </div>
-        <table>
+            <label for="motorcyclePrice">Price ($):</label>
+            <input type="number" id="motorcyclePrice" placeholder="Enter price" required>
+            <button type="button" id="addMotorcycle">Add Motorcycle</button>
+        </form>
+        <table id="motorcycleTable">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -44,18 +43,17 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody id="motorcycleList"></tbody>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
         </table>
     </main>
-
     <footer>
         <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
     </footer>
-
-    <script src="crud.js"></script>
+    <script src="js/manage_motorcycles.js"></script>
 </body>
 </html>
-
 
 
 

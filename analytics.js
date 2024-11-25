@@ -1,39 +1,38 @@
-// CRUD Functionality for Manage Motorcycles Page
-function addMotorcycle() {
-    const name = document.getElementById('name').value;
-    const type = document.getElementById('type').value;
-    const price = document.getElementById('price').value;
-
-    if (name && type && price) {
-        const table = document.getElementById('motorcycle-list');
-        const row = table.insertRow();
-        row.innerHTML = `
-            <td>${name}</td>
-            <td>${type}</td>
-            <td>${price}</td>
-            <td><button onclick="deleteRow(this)">Delete</button></td>
-        `;
-    } else {
-        alert('Please fill in all fields');
-    }
-}
-
-function deleteRow(btn) {
-    const row = btn.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-}
-
-// Analytics for Data Analytics Page
-const ctx = document.getElementById('chart').getContext('2d');
-new Chart(ctx, {
+const ctx = document.getElementById('salesChart').getContext('2d');
+const salesChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Sport', 'Cruiser', 'Touring', 'Adventure', 'Electric'],
         datasets: [{
             label: 'Motorcycle Sales (in 1000s)',
-            data: [20, 15, 30, 10, 5],
-            backgroundColor: ['red', 'blue', 'yellow', 'green', 'purple']
+            data: [20, 15, 25, 10, 5],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderWidth: 1
         }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
     }
 });
+
+
+
 

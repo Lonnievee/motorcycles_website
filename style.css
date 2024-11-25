@@ -1,26 +1,28 @@
+/* General reset */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Header Navigation */
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1em 0;
+    text-align: center;
 }
 
 header ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
 header ul li {
-    margin: 0 20px;
+    display: inline;
+    margin-right: 15px;
 }
 
 header ul li a {
@@ -28,31 +30,55 @@ header ul li a {
     text-decoration: none;
 }
 
-header ul li a:hover {
+header ul li a.active {
     text-decoration: underline;
 }
 
+/* Main Section Styling */
 main {
+    padding: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1, .about-us h2 {
+    color: #222;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
+}
+
+.about-us ul {
+    list-style: disc;
     margin: 20px;
+    padding-left: 40px;
 }
 
-main h1, h2, h3 {
-    color: #333;
+.about-us a {
+    color: #0066cc;
+    text-decoration: none;
 }
 
+.about-us a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
+    text-align: center;
+    padding: 10px;
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-section {
-    margin: 20px 0;
-}
+
+
 
   
 

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analytics</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="navbar">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="motorcycles_crud.html">Manage Motorcycles</a></li>
@@ -17,20 +17,28 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <h1>Motorcycle Sales Data</h1>
-        <canvas id="chart"></canvas>
+        <p>This chart shows the sales data for different types of motorcycles.</p>
+        <canvas id="salesChart" width="400" height="200"></canvas>
     </main>
-
     <footer>
         <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
     </footer>
 
-    <script src="analytics.js"></script>
+    <!-- Add Chart.js Library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add your analytics.js file -->
+    <script src="js/analytics.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
