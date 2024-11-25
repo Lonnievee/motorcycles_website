@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Motorcycles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="motorcycles_crud.html">Manage Motorcycles</a></li>
+                <li><a href="analytics.html">Data Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Manage Motorcycles</h1>
+        <form id="motorcycleForm">
+            <label for="name">Motorcycle Name:</label>
+            <input type="text" id="name" required>
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="sport">Sport</option>
+                <option value="cruiser">Cruiser</option>
+                <option value="touring">Touring</option>
+            </select>
+            <label for="price">Price ($):</label>
+            <input type="number" id="price" required>
+            <button type="button" onclick="addMotorcycle()">Add Motorcycle</button>
+        </form>
+
+        <h2>Motorcycle List</h2>
+        <table id="motorcycleTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Motorcycles Website. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
